@@ -1,0 +1,347 @@
+                    /* General */
+/* Color Theme Swatches in Hex */
+.talking-heads-for-83-1-hex { color: #D62838; }
+.talking-heads-for-83-2-hex { color: #0F060B; }
+.talking-heads-for-83-3-hex { color: #F4F2F4; }
+.talking-heads-for-83-4-hex { color: #5398D7; }
+.talking-heads-for-83-5-hex { color: #D82623; }
+
+/* Color Theme Swatches in RGBA */
+.talking-heads-for-83-1-rgba { color: rgba(214, 40, 56, 1); }
+.talking-heads-for-83-2-rgba { color: rgba(14, 5, 11, 1); }
+.talking-heads-for-83-3-rgba { color: rgba(244, 242, 244, 1); }
+.talking-heads-for-83-4-rgba { color: rgba(82, 151, 214, 1); }
+.talking-heads-for-83-5-rgba { color: rgba(216, 38, 35, 1); }
+
+/* Color Theme Swatches in HSLA */
+.talking-heads-for-83-1-hsla { color: hsla(354, 68, 49, 1); }
+.talking-heads-for-83-2-hsla { color: hsla(326, 42, 4, 1); }
+.talking-heads-for-83-3-hsla { color: hsla(300, 8, 95, 1); }
+.talking-heads-for-83-4-hsla { color: hsla(208, 62, 58, 1); }
+.talking-heads-for-83-5-hsla { color: hsla(0, 72, 49, 1); }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Barlow Condensed;
+}
+
+body{
+    background: url(./Images/Talking_heads__making_sense_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #B62C2A;
+    padding: 2rem;
+}
+
+body > div:nth-child(1){
+    border-radius: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+p{
+    font-size: 1.6vw;
+}
+
+li{
+    font-size: 1.6vw;
+}
+
+
+
+
+
+                    /* Header */
+
+header{
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 20px 20px 0px 0px;
+}
+
+/* Fråga om font tjockleken*/
+header h1{
+    font-family: 'Bungee Outline';
+    color: white;
+    font-weight: 700;
+    font-size: 8vw;
+}
+
+
+
+
+                    /* NAV */
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+nav div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 25%;
+    height: 60px;
+    margin: 0px 5px;
+    color: rgb(62, 62, 62);
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 2.9vw;
+}
+
+nav div:hover{
+    transition: 0.35s;
+    color: white;
+    background: rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+
+.marked{
+    height: 62px;
+    width: 26%;
+    border: 1.5px solid rgb(218, 218, 218);
+    box-shadow: 0px 0px 10px 1px rgb(213, 213, 213);
+    color: black;
+    font-weight: 700;
+    margin: 0px 2px;
+
+}
+
+.marked:hover{
+    transition: 0s;
+    background: rgba(255, 255, 255, 0.6);
+    color: rgb(45, 45, 45);
+}
+
+
+
+
+
+                    /* Main */
+
+main{
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+
+
+                    /* Main content, article 1*/
+
+article{
+    display: grid;
+    grid-template-columns: repeat(12, fit-content(1fr));
+    grid-template-rows: repeat(12, fit-content(1fr));
+    gap: 10px;
+    border: 1px solid rgb(197, 196, 196);
+    border-radius: 20px;
+    padding: 15px;
+    margin: 30px 0px;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+                    /* Album data */
+
+.album_data{
+    display: flex;
+    flex-direction: column;
+    color: #c1bfbf;
+    height: 100%;
+    grid-column: 1 / 9;
+    grid-row: 1 / 10;
+    /* max-width: 800px; */
+}
+
+.album_data h1{
+    font-family: 'Bungee Outline';
+    color: #c1bfbf;
+    font-size: 3vw;
+    max-width: 550px;
+    display: contents;
+}
+.album_data h2{
+    color: white;
+    margin-bottom: 5vw;
+    font-size: 2.6vw;
+    max-width: 550px;
+}
+
+.album_data > div:nth-child(2) ul{
+    margin-left: 40px;
+    font-size: 1.8vw;
+}
+
+.album_description{
+    margin-top: 5vw;
+}
+
+
+
+
+
+
+                    /* Alumb cover */
+
+
+main > article:nth-child(2) .cover img{
+    margin-left: 2px;
+}                    
+.cover{
+    position: relative;
+    grid-column: 9 / 13;
+    grid-row: 1 / 5;
+    border-radius: 20px 20px 0px 0px;
+    background-color: none;
+}
+
+.cover img:nth-child(2){
+    position: relative;
+}
+.cover img:nth-child(2):hover{
+    opacity: 0;
+    transition: 1s;
+}
+
+.cover img:nth-child(1){
+    position: absolute;
+}
+
+.cover img{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+}
+
+
+                    /* Song list */
+
+.song_list{
+    display: flex;
+    grid-column: 9 / 13;
+    grid-row: 5 / 10;
+}
+main > article:nth-child(1) .song_list div{
+    background-color: #4C6DB4;
+}
+main > article:nth-child(2) .song_list div{
+    background-color: #E78739;
+    color: #14558e;
+}
+
+.song_list div{
+    width: 50%;
+    padding: 15px;
+}
+
+.song_list div:nth-child(1){
+    margin-right: 5px;
+    border-radius: 0px 0px 0px 20px;
+}
+.song_list div:nth-child(2){
+    margin-left: 5px;
+    border-radius: 0px 0px 20px 0px;
+}
+
+.song_list div ul{
+    list-style-type: none;
+}
+main > article:nth-child(1) .song_list div{
+    color: #6FA930;;
+}
+
+
+
+
+                    /* Anecdotes*/
+
+.anecdotes{
+    grid-column: 1 / 13;
+    grid-row: 10 / 13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    min-height: 200px;
+}
+.anecdotes li{
+    list-style-type: none;
+    padding: 20px;
+}
+
+                    /* Article 1, anecdotes grid layout */
+main > article:nth-child(1) .anecdotes > li:nth-child(1){
+    grid-column: 1 / 3;
+    background-color: #6FA930;
+    border-radius: 20px 0px 20px 20px;
+}
+main > article:nth-child(1) .anecdotes > li:nth-child(2){
+    grid-column: 3 / 5;
+}
+main > article:nth-child(1) .anecdotes > li:nth-child(3){
+    grid-column: 5 / 9;
+    background-color: #6FA930;
+    border-radius: 20px 20px 20px 0px;
+}
+main > article:nth-child(1) .anecdotes > li:nth-child(4){
+    display: none;
+}
+main > article:nth-child(1) .anecdotes > li:nth-child(5){
+    display: none;
+}
+main > article:nth-child(1) .anecdotes > li:nth-child(6){
+    grid-column: 9 / 11;
+    background: url(./images/talkin\ heads\ mockUp\ img.png);
+    background-size: cover;
+    border-radius: 0px 20px 20px 20px;
+}
+main > article:nth-child(1) .anecdotes > li:nth-child(7){
+    grid-column: 11 / 13;
+    background-color: #6FA930;
+    border-radius: 20px 20px 0px 20px;
+}
+
+
+
+                    /* Article 2, anecdotes grid layout */
+main > article:nth-child(2) .anecdotes > li:nth-child(1){
+    grid-column: 1 / 5;
+    background-color: #E78739;
+    border-radius: 20px 20px 20px 0px;
+}
+main > article:nth-child(2) .anecdotes > li:nth-child(2){
+    grid-column: 5 / 7;
+    background-color: #E78739;
+    border-radius: 0px 20px 20px 20px;
+}
+main > article:nth-child(2) .anecdotes > li:nth-child(3){
+    grid-column: 7 / 11;
+    background: url(./images/talkin\ heads\ mockUp\ img.png);
+    background-size: cover;
+    background-color: #E78739;
+    border-radius: 0px 20px 20px 20px;
+}
+main > article:nth-child(2) .anecdotes > li:nth-child(4){
+    display: none;
+}
+main > article:nth-child(2) .anecdotes > li:nth-child(5){
+    display: none;
+}
+main > article:nth-child(2) .anecdotes > li:nth-child(6){
+    background-color: #E78739;
+    grid-column: 11 / 13;
+    border-radius: 20px 20px 0px 20px;
+}
+
+                    /* Footer */
+footer{
+    padding: 20px 30px;
+    border-radius: 0px 0px 20px 20px;
+    font-size: 1.8vw;
+    background-color: rgba(0, 0, 0, 0.35);
+    color: #d5d5d5;
+    height: 60px;
+}

@@ -339,6 +339,12 @@ footer{
                     /* Media queries */
                     /* 1111px  set text sizes*/
 @media screen and (min-width:1111px) {
+    header h1{
+        font-size: 88px;
+    }
+    nav div{
+        font-size: 32px;
+    }
     p{
         font-size: 16px;
     }
@@ -379,6 +385,12 @@ footer{
 }
 
 @media screen and (max-width:900px) and (min-width:801px){
+    header h1{
+        font-size: 72px;
+    }
+    nav div{
+        font-size: 26px;
+    }
     p{
         font-size: 14.4px;
     }
@@ -409,9 +421,6 @@ footer{
                     /* Tablet */
 @media screen and (max-width: 800px) {
                     /* General tablet*/
-    body{
-        padding: 2rem;
-    }
     header{
         text-align: center;
         padding: 20px 12%;

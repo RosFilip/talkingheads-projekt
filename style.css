@@ -188,10 +188,7 @@ article{
 
                     /* Alumb cover */
 
-
-main > article:nth-child(2) .cover img{
-    margin-left: 2px;
-}                    
+               
 .cover{
     position: relative;
     grid-column: 9 / 13;
@@ -510,6 +507,115 @@ footer{
     }
     main > article:nth-child(2) .anecdotes > li:nth-child(6){
         grid-column: 10 / 13;
+        grid-row: 2 / 3;
+        border-radius: 20px 20px 0px 20px;
+    }
+}
+
+
+
+
+
+                    /* Phone */
+@media screen and (max-width: 500px) {
+    body{
+        padding: 0px;
+    }
+    header{
+        border-radius: 0px 0px 0px 0px;
+    }
+    footer{
+        border-radius: 0px;
+    }
+    .cover{
+        position: relative;
+        grid-column: 1 / 13;
+        grid-row: 1 / 8;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .cover img{
+        border-radius: 20px 20px 0px 0px;
+    }
+    .song_list{
+        display: flex;
+        flex-direction: row;
+        grid-column: 1 / 13;
+        grid-row: 8 / 10;
+    }
+    .song_list div{
+        width: 100%;
+        height: 100%;
+    }
+    .song_list div:nth-child(1){
+        margin-bottom: 0px;
+        margin-right: 5px;
+        border-radius: 0px 0px 0px 20px;
+    }
+    .song_list div:nth-child(2){
+        margin-top: 0px;
+        margin-left: 5px;
+        border-radius: 0px 0px 20px 0px;
+    }
+    .album_data{
+        grid-column: 1 / 13;
+        grid-row: 10 / 12;
+    }
+    .anecdotes{
+        grid-column: 1 / 13;
+        grid-template-rows: repeat(2, 1fr);
+        grid-row: 12 / 13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 5px;
+        min-height: 350px;
+    }
+                            /* Article 1, anecdotes grid layout Phone */
+    main > article:nth-child(1) .anecdotes > li:nth-child(1){
+        grid-column: 1 / 5;
+        border-radius: 20px 0px 20px 20px;
+    }
+    main > article:nth-child(1) .anecdotes > li:nth-child(2){
+        display: none;
+    }
+    main > article:nth-child(1) .anecdotes > li:nth-child(3){
+        grid-column: 5 / 13;
+        border-radius: 20px 20px 20px 0px;
+    }
+    main > article:nth-child(1) .anecdotes > li:nth-child(6){
+        grid-column: 5 / 9;
+        grid-row: 2 / 3;
+        border-radius: 0px 20px 20px 20px;
+    }
+    main > article:nth-child(1) .anecdotes > li:nth-child(7){
+        grid-column: 9 / 13;
+        grid-row: 2 / 3;
+        border-radius: 20px 20px 0px 20px;
+    }
+
+                        /* Article 2, anecdotes grid layout */
+    main > article:nth-child(2) .anecdotes > li:nth-child(1){
+        grid-column: 1 / 9;
+        border-radius: 20px 20px 20px 0px;
+    }
+    main > article:nth-child(2) .anecdotes > li:nth-child(2){
+        grid-column: 9 / 13;
+        border-radius: 0px 20px 20px 20px;
+    }
+    main > article:nth-child(2) .anecdotes > li:nth-child(3){
+        grid-column: 1 / 9;
+        grid-row: 2 / 3;
+        background: url(./images/talkin\ heads\ mockUp\ img.png);
+        background-size: cover;
+        border-radius: 0px 20px 20px 20px;
+    }
+    main > article:nth-child(2) .anecdotes > li:nth-child(4){
+        display: none;
+    }
+    main > article:nth-child(2) .anecdotes > li:nth-child(5){
+        display: none;
+    }
+    main > article:nth-child(2) .anecdotes > li:nth-child(6){
+        grid-column: 9 / 13;
         grid-row: 2 / 3;
         border-radius: 20px 20px 0px 20px;
     }

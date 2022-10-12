@@ -37,7 +37,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding: 2rem;
+    padding: 100px 30px;
 }
 
 body > div:nth-child(1){
@@ -69,7 +69,7 @@ header{
 /* Fråga om font tjockleken*/
 header h1{
     font-family: 'Bungee Shade';
-    color: white;
+    color: rgb(234, 234, 234);
     font-weight: 700;
     font-size: calc(8 * var(--font_size));
 }
@@ -376,9 +376,10 @@ footer{
 #speaking-in-tounges .album_description{
     padding: 0px 0px 0px 15px;
 }
-#speaking-in-tounges .cover img{
-    padding: 15px 15px 0px 0px;
+#speaking-in-tounges .cover{
+    margin: 15px 15px 0px 0px;
 }
+
 #speaking-in-tounges .song_list{
     padding: 0px 15px 0px 0px;
 }
@@ -476,6 +477,14 @@ footer{
                     /* Tablet */
 @media screen and (max-width: 800px) {
                     /* General tablet*/
+    body{
+        background: url(./images/Talking_heads__making_sense_bg.jpg);
+        background: url(./Images/Talking_heads__making_sense_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
     header{
         text-align: center;
         padding: 20px 12%;
@@ -611,17 +620,17 @@ footer{
         grid-row: 2 / 3;
         border-radius: 20px 20px 0px 20px;
     }
-}
 
+                        /* Number 1 star png Tablet*/
 
-                    /* Number 1 star png Tablet*/
-
-    #speaking-in-tounges .cover img{
-    padding: 15px 0px 0px 15px;
+    #speaking-in-tounges .cover{
+    margin: 15px 0px 0px 15px;
     }
     #speaking-in-tounges .song_list{
     padding: 15px 15px 0px 0px;
     }
+}
+
 
 
 
@@ -763,8 +772,8 @@ footer{
 
                         /* Number 1 star png Phone*/
 
-    #speaking-in-tounges .cover img{
-    padding: 15px 15px 0px 15px;
+    #speaking-in-tounges .cover{
+    margin: 15px 15px 0px 15px;
     }
     #speaking-in-tounges .song_list{
     padding: 0px 15px 0px 15px;

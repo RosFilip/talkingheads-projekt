@@ -47,11 +47,11 @@ body > div:nth-child(1){
 }
 
 p{
-    font-size: 1.6vw;
+    font-size: calc(1.6 * var(--font_size));
 }
 
 li{
-    font-size: 1.6vw;
+    font-size: calc(1.6 * var(--font_size));
 }
 
 
@@ -71,7 +71,7 @@ header h1{
     font-family: 'Bungee Shade';
     color: white;
     font-weight: 700;
-    font-size: 8vw;
+    font-size: calc(8 * var(--font_size));
 }
 
 
@@ -97,7 +97,7 @@ nav div{
     margin: 0px 5px;
     color: rgb(62, 62, 62);
     background: rgba(255, 255, 255, 0.6);
-    font-size: 2.9vw;
+    font-size: calc(2.9 * var(--font_size));
 }
 
 .marked{
@@ -159,14 +159,14 @@ article{
 .album_data h1{
     font-family: 'Bungee Outline';
     color: #c1bfbf;
-    font-size: 3vw;
+    font-size: calc(3 * var(--font_size));
     max-width: 550px;
     display: contents;
 }
 .album_data h2{
     color: white;
     margin-bottom: 5vw;
-    font-size: 2.6vw;
+    font-size: calc(2.6 * var(--font_size));
     max-width: 550px;
 }
 
@@ -177,7 +177,7 @@ article{
 }
 
 .album_description{
-    margin-top: 5vw;
+    font-size: calc(5 * var(--font_size));
 }
 
 
@@ -335,7 +335,7 @@ main > article:nth-child(2) .anecdotes > li:nth-child(6){
 footer{
     padding: 20px 30px;
     border-radius: 0px 0px 20px 20px;
-    font-size: 1.8vw;
+    font-size: calc(1.8 * var(--font_size));
     background-color: rgba(0, 0, 0, 0.35);
     color: #d5d5d5;
     height: 60px;
@@ -345,33 +345,33 @@ footer{
                     /* 1111px  set text sizes*/
 @media screen and (min-width:1111px) {
     header h1{
-        font-size: 88px;
+        font-size: calc(0 * var(--font_size) + 88px);
     }
     nav div{
-        font-size: 32px;
+        font-size: calc(0 * var(--font_size) + 32px);
     }
     p{
-        font-size: 16px;
+        font-size: calc(0 * var(--font_size) + 16px);
     }
     li{
-        font-size: 18px;
+        font-size: calc(0 * var(--font_size) + 18px);
     }
     .album_data h1{
-        font-size: 34px;
+        font-size: calc(0 * var(--font_size) + 34px);
     }
     .album_data h2{
         color: white;
         margin-bottom: 5vw;
-        font-size: 29px;
+        font-size: calc(0 * var(--font_size) + 29px);
     }  
     .album_data > div:nth-child(2) ul{
-        font-size: 16px;
+        font-size: calc(0 * var(--font_size) + 16px);
     }
     .album_description{
-        font-size: 16px;
+        font-size: calc(0 * var(--font_size) + 16px);
     }
     footer{
-        font-size: 20px;
+        font-size: calc(0 * var(--font_size) + 20px);
     }
 }
 
@@ -391,33 +391,33 @@ footer{
 
 @media screen and (max-width:900px) and (min-width:801px){
     header h1{
-        font-size: 72px;
+        font-size: calc(0 * var(--font_size) + 72px);
     }
     nav div{
-        font-size: 26px;
+        font-size: calc(0 * var(--font_size) + 26px);
     }
     p{
-        font-size: 14.4px;
+        font-size: calc(0 * var(--font_size) + 14.4px);
     }
     li{
-        font-size: 14.4px;
+        font-size: calc(0 * var(--font_size) + 14.4px);
     }
     .album_data h1{
-        font-size: 27px;
+        font-size: calc(0 * var(--font_size) + 27px);
     }
     .album_data h2{
         color: white;
         margin-bottom: 5vw;
-        font-size: 23.4px;
+        font-size: calc(0 * var(--font_size) + 23.4px);
     }  
     .album_data > div:nth-child(2) ul{
-        font-size: 16.2px;
+        font-size: calc(0 * var(--font_size) + 16.2px);
     }
     .album_description{
-        font-size: 16px;
+        font-size: calc(0 * var(--font_size) + 16px);
     }
     footer{
-        font-size: 16.2px;
+        font-size: calc(0 * var(--font_size) + 16.2px);
     }
 }
 
@@ -431,11 +431,11 @@ footer{
         padding: 20px 12%;
     }
     p{
-        font-size: 2.5vw;
+        font-size: calc(2.5 * var(--font_size));
     }
 
     li{
-        font-size: 2.5vw;
+        font-size: calc(2.5 * var(--font_size));
     }
 
 
@@ -456,7 +456,7 @@ footer{
     .album_data h2{
         color: white;
         margin-bottom: 5vw;
-        font-size: 4vw;
+        font-size: calc(4 * var(--font_size));
     }
                     /* Album cover tablet */
     .cover{
@@ -482,10 +482,10 @@ footer{
         height: 50%;
     }
     .song_list h2{
-        font-size: 2.2vw;
+        font-size: calc(2.2 * var(--font_size));
     }
     .song_list div ul li {
-        font-size: 2.6vw;
+        font-size: calc(2.6 * var(--font_size));
     }
     .song_list div:nth-child(1){
         margin-bottom: 5px;
@@ -508,7 +508,7 @@ footer{
         min-height: 350px;
     }
     .anecdotes li{
-        font-size: 2vw;
+        font-size: calc(2 * var(--font_size));
     }
                         /* Article 1, anecdotes grid layout tablet */
     main > article:nth-child(1) .anecdotes > li:nth-child(1){
@@ -576,27 +576,27 @@ footer{
         border-radius: 0px 0px 0px 0px;
     }
     p{
-        font-size: 20px;
+        font-size: calc(4 * var(--font_size));
     }
     li{
-        font-size: 4vw;
+        font-size: calc(4 * var(--font_size));
     }
     .album_data h1{
-        font-size: 6vw;
+        font-size: calc(6 * var(--font_size));
     }
     .album_data h2{
         color: white;
         margin-bottom: 5vw;
-        font-size: 23.4px;
+        font-size: calc(5.5 * var(--font_size));
     }  
     .album_data > div:nth-child(2) ul{
-        font-size: 1.7vw;
+        font-size: calc(1.7 * var(--font_size));
     }
     .album_description p{
-        font-size: 4vw;
+        font-size: calc(4 * var(--font_size));
     }
     footer{
-        font-size: 16.2px;
+        font-size: calc(3.2 * var(--font_size));
         border-radius: 0px;
     }
     .cover{
@@ -619,10 +619,10 @@ footer{
         height: 100%;
     }
     .song_list div ul li{
-        font-size: 3.8VW;
+        font-size: calc(3.8 * var(--font_size));
     }
     .song_list h2{
-        font-size: 4.8vw;
+        font-size: calc(4.8 * var(--font_size));
     }
     .song_list div:nth-child(1){
         margin-bottom: 0px;
@@ -648,7 +648,7 @@ footer{
         min-height: 350px;
     }
     .anecdotes li{
-        font-size: 3vw;
+        font-size: calc(3 * var(--font_size));
     }
                             /* Article 1, anecdotes grid layout Phone */
     main > article:nth-child(1) .anecdotes > li:nth-child(1){

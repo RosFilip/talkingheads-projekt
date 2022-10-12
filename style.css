@@ -271,6 +271,7 @@ main > article:nth-child(1) .song_list div{
 main > article:nth-child(1) .anecdotes > li:nth-child(1){
     grid-column: 1 / 3;
     background-color: #6FA930;
+    color: #14558e;
     border-radius: 20px 0px 20px 20px;
 }
 main > article:nth-child(1) .anecdotes > li:nth-child(2){
@@ -279,6 +280,7 @@ main > article:nth-child(1) .anecdotes > li:nth-child(2){
 main > article:nth-child(1) .anecdotes > li:nth-child(3){
     grid-column: 5 / 9;
     background-color: #6FA930;
+    color: #14558e;
     border-radius: 20px 20px 20px 0px;
 }
 main > article:nth-child(1) .anecdotes > li:nth-child(4){
@@ -291,11 +293,14 @@ main > article:nth-child(1) .anecdotes > li:nth-child(6){
     grid-column: 9 / 11;
     background: url(./images/talkin\ heads\ mockUp\ img.png);
     background-size: cover;
+    display: flex;
+    align-items: flex-end;
     border-radius: 0px 20px 20px 20px;
 }
 main > article:nth-child(1) .anecdotes > li:nth-child(7){
     grid-column: 11 / 13;
     background-color: #6FA930;
+    color: #14558e;
     border-radius: 20px 20px 0px 20px;
 }
 
@@ -305,11 +310,13 @@ main > article:nth-child(1) .anecdotes > li:nth-child(7){
 main > article:nth-child(2) .anecdotes > li:nth-child(1){
     grid-column: 1 / 5;
     background-color: #E78739;
+    color: #14558e;
     border-radius: 20px 20px 20px 0px;
 }
 main > article:nth-child(2) .anecdotes > li:nth-child(2){
     grid-column: 5 / 7;
     background-color: #E78739;
+    color: #14558e;
     border-radius: 0px 20px 20px 20px;
 }
 main > article:nth-child(2) .anecdotes > li:nth-child(3){
@@ -317,6 +324,8 @@ main > article:nth-child(2) .anecdotes > li:nth-child(3){
     background: url(./images/talkin\ heads\ mockUp\ img.png);
     background-size: cover;
     background-color: #E78739;
+    display: flex;
+    align-items: flex-end;
     border-radius: 0px 20px 20px 20px;
 }
 main > article:nth-child(2) .anecdotes > li:nth-child(4){
@@ -327,6 +336,7 @@ main > article:nth-child(2) .anecdotes > li:nth-child(5){
 }
 main > article:nth-child(2) .anecdotes > li:nth-child(6){
     background-color: #E78739;
+    color: #14558e;
     grid-column: 11 / 13;
     border-radius: 20px 20px 0px 20px;
 }

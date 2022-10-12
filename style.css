@@ -161,7 +161,6 @@ article{
     color: #c1bfbf;
     font-size: calc(3 * var(--font_size));
     max-width: 550px;
-    display: contents;
 }
 .album_data h2{
     color: white;
@@ -348,6 +347,49 @@ footer{
     color: #d5d5d5;
     height: 60px;
 }
+
+                    /* Number 1 star png*/
+#speaking-in-tounges{
+    padding: 0px;
+}
+
+#speaking-in-tounges .album_data h1{
+    padding: 15px 0px 0px 15px;
+    position: relative;
+}
+#speaking-in-tounges > div div h1::before{
+    display: flex;
+    content: url(./Images/number-1-icon.png);
+    position: absolute;
+    top: -8px;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+}
+
+#speaking-in-tounges .album_data h2{
+    padding: 0px 0px 0px 15px;
+}
+#speaking-in-tounges .album_data > div:nth-child(2){
+    padding: 0px 0px 0px 15px;
+}
+#speaking-in-tounges .album_description{
+    padding: 0px 0px 0px 15px;
+}
+#speaking-in-tounges .cover img{
+    padding: 15px 15px 0px 0px;
+}
+#speaking-in-tounges .song_list{
+    padding: 0px 15px 0px 0px;
+}
+#speaking-in-tounges .anecdotes{
+    padding: 0px 15px 15px 15px;
+}
+
+
+
+
+
 
                     /* Media queries */
                     /* 1111px  set text sizes*/
@@ -572,6 +614,16 @@ footer{
 }
 
 
+                    /* Number 1 star png Tablet*/
+
+    #speaking-in-tounges .cover img{
+    padding: 15px 0px 0px 15px;
+    }
+    #speaking-in-tounges .song_list{
+    padding: 15px 15px 0px 0px;
+    }
+
+
 
 
 
@@ -708,4 +760,16 @@ footer{
         grid-row: 2 / 3;
         border-radius: 20px 20px 0px 20px;
     }
+
+                        /* Number 1 star png Phone*/
+
+    #speaking-in-tounges .cover img{
+    padding: 15px 15px 0px 15px;
+    }
+    #speaking-in-tounges .song_list{
+    padding: 0px 15px 0px 15px;
+    }
+
+
+    
 }

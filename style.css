@@ -20,11 +20,16 @@
 .talking-heads-for-83-4-hsla { color: hsla(208, 62, 58, 1); }
 .talking-heads-for-83-5-hsla { color: hsla(0, 72, 49, 1); }
 
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: Barlow Condensed;
+}
+
+:root{
+    --font_size: 1vw;
 }
 
 body{

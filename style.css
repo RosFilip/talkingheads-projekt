@@ -1,31 +1,8 @@
-                    /* General */
-/* Color Theme Swatches in Hex */
-.talking-heads-for-83-1-hex { color: #D62838; }
-.talking-heads-for-83-2-hex { color: #0F060B; }
-.talking-heads-for-83-3-hex { color: #F4F2F4; }
-.talking-heads-for-83-4-hex { color: #5398D7; }
-.talking-heads-for-83-5-hex { color: #D82623; }
-
-/* Color Theme Swatches in RGBA */
-.talking-heads-for-83-1-rgba { color: rgba(214, 40, 56, 1); }
-.talking-heads-for-83-2-rgba { color: rgba(14, 5, 11, 1); }
-.talking-heads-for-83-3-rgba { color: rgba(244, 242, 244, 1); }
-.talking-heads-for-83-4-rgba { color: rgba(82, 151, 214, 1); }
-.talking-heads-for-83-5-rgba { color: rgba(216, 38, 35, 1); }
-
-/* Color Theme Swatches in HSLA */
-.talking-heads-for-83-1-hsla { color: hsla(354, 68, 49, 1); }
-.talking-heads-for-83-2-hsla { color: hsla(326, 42, 4, 1); }
-.talking-heads-for-83-3-hsla { color: hsla(300, 8, 95, 1); }
-.talking-heads-for-83-4-hsla { color: hsla(208, 62, 58, 1); }
-.talking-heads-for-83-5-hsla { color: hsla(0, 72, 49, 1); }
-
-
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Barlow Condensed;
+    font-family: Barlow Condensed, sans-serif;
 }
 
 :root{
@@ -33,7 +10,7 @@
 }
 
 body{
-    background: url(./Images/Talking_heads__making_sense_bg.jpg);
+    background: url(./Images/Talking_ehads_making_sense_bg_desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -134,8 +111,7 @@ main{
 
 article{
     display: grid;
-    grid-template-columns: repeat(12, fit-content(1fr));
-    grid-template-rows: repeat(12, fit-content(1fr));
+    grid-template-columns: repeat(12, auto);
     gap: 10px;
     border: 1px solid rgb(197, 196, 196);
     border-radius: 20px;
@@ -176,7 +152,7 @@ article{
 }
 
 .album_description{
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: calc(5 * var(--font_size));
 }
 
@@ -479,7 +455,6 @@ footer{
                     /* General tablet*/
     body{
         background: url(./images/Talking_heads__making_sense_bg.jpg);
-        background: url(./Images/Talking_heads__making_sense_bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -641,6 +616,9 @@ footer{
     body{
         padding: 0px;
     }
+    nav{
+        padding: 0px 30px;
+    }
     header{
         border-radius: 0px 0px 0px 0px;
     }
@@ -777,8 +755,5 @@ footer{
     }
     #speaking-in-tounges .song_list{
     padding: 0px 15px 0px 15px;
-    }
-
-
-    
+    }    
 }
